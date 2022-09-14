@@ -78,11 +78,20 @@ header nav ul li {
     left: 250px;
 }
 
-.button {
+.container {
+    float: left;
+    position: absolute;
+    bottom: 250px;
+    left: 305px;
+    border: none;
+    padding: 10px 20px;
+    font-size: large; 
+}
+.button{
     float: left;
     position: absolute;
     bottom: 280px;
-    left: 315px;
+    left: 345px;
     border: none;
     padding: 10px 20px;
     font-size: large; 
