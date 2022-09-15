@@ -41,7 +41,7 @@ header h1 {
   margin: auto;
 }
 
-.grid-x .small-4 {
+.grid-x .small-6, .medium-4 {
   padding: 20px;
   box-shadow: 5px 5px 5px #888888;
 }
@@ -57,120 +57,23 @@ img {
   padding: 5px;
 }
 
-/* .meowfact {
-  text-align: center;
+h3 {
+  color: #1779ba;
+  font-weight: bolder;
+}
+
+h4 {
   
-} */
-
-/* header{
-    padding: 20px 35px;
-    background-color: #6d6822;
-    position: -webkit-sticky;
-    position: sticky;
-    display:flex; 
-    justify-content: space-between;
-    flex-wrap: wrap;
-    top: 0;
-    width: 100%;
+  font-size: medium;
+  font-weight: bolder;
 }
 
-header h1{
-    font-weight: bold;
-    font-size: 36px;
-    color:#040404;
-    margin: 0;
-    display: inline;
-}
-
-header a {
-    color:#0b0b0b;
-    text-decoration: none;
-}
-
-header nav {
-    float: right;
-    margin: 7px 0;
-}
-
-header nav ul li {
-    display: inline;
+@media screen and (max-width: 575px) {
+  .randomfacts {
+      margin: 0;
   }
 
-  header nav ul li a {
-    margin: 0 30px;
-    font-weight: bold;
-    font-size: 22px;
+  .facts {
+    min-height: 203px;
   }
-
-.meowfact {
-  width: 50%;
-  color: rebeccapurple;
-}
-
-.hero {
-    background-image: url("../images/cat-hero\ .webp");
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-/* .container {
-    float: left;
-    position: absolute;
-    bottom: 250px;
-    left: 305px;
-    border: none;
-    padding: 10px 20px;
-    font-size: large; 
-} */
-
-/* .intro {
-    text-align: center;
-  }
-
-  .intro p {
-    line-height: 1.7;
-    color: rgb(59, 43, 43);
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-  }
-
-  .section-title {
-    font-size: 55px;
-    color: #0b0c0c;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-    border-bottom: 3px solid;
-  }
-  
-  .primary-border {
-    border-color: #443c0c;
-  }
-footer{
-    background-color: #6d6822;
-    width: 100%;
-    padding: 40px 35px;
-
-}
-
-footer h2 {
-    display:inline;
-    color:#000000;;
-    font-size: 30px;
-    margin: 0; 
-    font-weight: bold;
-  }
-
-  footer div {
-    float: right;
-    line-height: 1.5;
-    text-align: right;
-    color:#070707;;
-  }
-
-  section {
-    padding: 60px;
-  } */
+}  
