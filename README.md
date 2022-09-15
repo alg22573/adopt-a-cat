@@ -25,7 +25,7 @@ https://alg22573.github.io/adopt-a-cat/
 
 
 ## Collaborators:
-   Ambar Gonzalez
+   Ambar Gonzalez   https://github.com/alg22573
    Temuulen Munkhbat   
    Svetlana Nesterova   https://github.com/EtaSveta
 
