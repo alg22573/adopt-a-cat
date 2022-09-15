@@ -17,6 +17,9 @@ https://alg22573.github.io/adopt-a-cat/
 * HTML
 * CSS
 * Java Script
+* Foundation framework library 
+
+   https://get.foundation/sites/docs/javascript.html
 * APIs used: 
 
    https://www.petfinder.com/developers/
@@ -26,12 +29,10 @@ https://alg22573.github.io/adopt-a-cat/
 
 ## Collaborators:
    Ambar Gonzalez   https://github.com/alg22573
-   Temuulen Munkhbat   
+   
+   Temuulen Munkhbat   https://github.com/tmunkhb
+   
    Svetlana Nesterova   https://github.com/EtaSveta
 
 
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
