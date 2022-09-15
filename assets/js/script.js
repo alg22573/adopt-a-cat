@@ -80,6 +80,10 @@ var createCatCards = function (cat) {
     var catGender = document.createElement("h4");
     catGender.innerHTML = "Gender: " + `${cat.gender}`;
 
+    //gettin cat breed
+    var catBreed = document.createElement("h4");
+    catBreed.innerHTML = "Breed: " + `${cat.breeds.primary}`
+
     //email for more info
     var catPhone = document.createElement("p");
     catPhone.innerHTML = "My phone number: " + `${cat.contact.phone}`;
@@ -90,6 +94,7 @@ var createCatCards = function (cat) {
     cardSection.appendChild(catName);
     cardSection.appendChild(catAge);
     cardSection.appendChild(catGender);
+    cardSection.appendChild(catBreed);
     cardSection.appendChild(catPhone);
 
     var catCard = document.createElement("div")
