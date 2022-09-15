@@ -105,3 +105,25 @@ var createCatCards = function (cat) {
     info.appendChild(catCell);
 
 }    
+
+
+// random cat fact API
+let catFact;
+const getData = () => {
+    fetch("https://meowfacts.herokuapp.com/?count=3")
+    .then((res) => {
+        return res.json();
+    })
+    .then((data) => {
+        console.log(data);
+        catFact = data.data;
+        document.getElementById("facts").innerHTML = `
+        <div>
+        ${catFact[0]}
+        </div>
+        `;
+    });
+    };
+
+document.getElementById("button").addEventListener("click", getData);
+

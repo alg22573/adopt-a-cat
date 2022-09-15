@@ -11,145 +11,49 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<>
+<body>
+    
+    <!---------------Web Name------------------>
     <header>
         <h1>
             <a href="/">Adopt a Cat</a>
         </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#did-you-know">Did You Know?</a>
-                </li>
-
-                <li>
-                    <a href="#what-you-do"> Find a Cat</a>
-                </li>
-
-                <li>
-                    <a href="#cat-facts"> Cat Facts</a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-
+        
     </header>
 
-    <!--jumbotron/hero-->
+    <!--------------jumbotron------------------>
     <section class="hero">
+       
+       <!-----------------Header------------------>
         <div>
-            <h2>Where All Cats Find Their Forever Home</h2>
-
+            <h2 class="grid-x grid-padding-x align-center">Where All Cats Find Their Forever Home</h2>
         </div>
-        <div class="container">
-            <form id="cat-form">
-              <div class="form-group">
-                <label for="cat" >Find your cat here:</label>
-                <input type="text" id="zip-code" class="form-control" placeholder="Enter your zipcode"> 
-                <div> 
+       
+        <!----------------Meow API---------------->
+        <div id="randomfacts" class="grid-x grid-padding-x align-center">
+            <div id="facts" class="cell small-4"></div>
+        </div>
+       
+       <!-----------------PetFinder API----------->
+       <form id="cat-form">
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x align-center">
+            <div class="medium-6 cell">
+              <label>Find your cat here:
+                <input type="text" id="zip-code" placeholder="Enter zipcode">
                 <button type="submit" class="button expanded">Search</button>
-                </div>
-              </div>   
-            </form>  
-        </div> 
+                <button type="button" class="button warning button-large" id="button">&#128571;&#128571;Click Me for Cat Facts&#128571;&#128571;</button>
+              </label>
+            </div>
+          </div>
+        </div>
+       </form>  
+    
     </section>
     
-    <div id="information">
-        <!-- <div class="grid-container cat-container">
-            <div class="grid-x grid-margin-x small-up-2 medium-up-3 cat-grid">
-                <div class="cell cat-cell">
-                    <div class="card cat-card"> -->
-                        <!-- <img src="assets/images/cat-1.jpeg">
-                        <div class="card-section">
-                            <h4>Many cats end up in shelter due to housing issues</h4>
-                            <p>Most cats in shelters don't have behavioral issues, and are turned in due to changes in owner's housing arrangement. </p>
-                        </div> -->
-                    <!-- </div>
-                </div>
-            </div>
-        </div>  -->
-    </div>           
+    <div id="information"></div>           
 
-    <main>
-        <div>
-        <div id="did-you-know" class="grid-container">
-            <div class="grid-x grid-margin-x small-up-2 medium-up-3">
-                <div class="cell">
-                    <div class="card">
-                        <img src="assets/images/cat-photo.jpeg">
-                        <div class="card-section">
-                            <h4>Adoption is the way to go!</h4>
-                            <p>Adoption is one of the most common ways to get a new cat. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="card">
-                        <img src="assets/images/cat-s.jpeg">
-                        <div class="card-section">
-                            <h4>Kittens are the new "IN"</h4>
-                            <p>According to Petfiner.com, people prefer adopting kittens over cats.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="card">
-                        <img src="assets/images/cat-5.jpeg">
-                        <div class="card-section">
-                            <h4>Black cats matter </h4>
-                            <p>A study conducted by the SPCA shows that about 31% of adoptions are black kitties. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="grid-container">
-            <div class="grid-x grid-margin-x small-up-2 medium-up-3">
-                <div class="cell">
-                    <div class="card">
-                        <img src="assets/images/cat-1.jpeg">
-                        <div class="card-section">
-                            <h4>Many cats end up in shelter due to housing issues</h4>
-                            <p>Most cats in shelters don't have behavioral issues, and are turned in due to changes in owner's housing arrangement. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="card">
-                        <img src="assets/images/cat-2.jpeg">
-                        <div class="card-section">
-                            <h4>Outgoing cats get adopted first</h4>
-                            <p>A study found that behavioral characteristics influenced cat adoptions. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell">
-                    <div class="card">
-                        <img src="assets/images/cat-3.jpeg">
-                        <div class="card-section">
-                            <h4>Long-term commitment. </h4>
-                            <p>Indoor cats have an avergae lifespan of 12-15 years.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </main>
-
-
-
-
-    <footer>
-        <h2>Made with Love ❤️</h2><br />
-        <div>
-            &copy; 2022 Adopt a Cat Foundation Inc.
-        </div>
-
-    </footer>
-
+    <!-----------------Foundation JS-------------->
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"
         crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
