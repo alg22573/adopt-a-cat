@@ -75,7 +75,7 @@ function displayCats(cats) {
     var info = document.querySelector("#information");
     info.innerHTML = "";
 
-    for (var i = 0; i <= 17; i++) {
+    for (var i = 0; i <= 19; i++) {
         var catInfo = cats[i];
         createCatCards(catInfo);
     }
@@ -106,7 +106,7 @@ var createCatCards = function (cat) {
     catBreed.innerHTML = "Breed: " + `${cat.breeds.primary}`
 
     //email for more info
-    var catPhone = document.createElement("p");
+    var catPhone = document.createElement("h4");
     catPhone.innerHTML = "My phone number: " + `${cat.contact.phone ? cat.contact.phone : ""}`;
 
 
@@ -124,7 +124,7 @@ var createCatCards = function (cat) {
     catCard.appendChild(catPic);
     catCard.appendChild(cardSection);
     var catCell = document.createElement("div")
-    catCell.classList.add("cell", "small-4");
+    catCell.classList.add("cell", "medium-4", "small-6");
     catCell.appendChild(catCard);
     
     info.classList.add("grid-x")
